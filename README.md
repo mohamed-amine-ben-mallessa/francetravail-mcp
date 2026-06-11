@@ -9,7 +9,13 @@
   <img src="https://img.shields.io/badge/python-%E2%89%A53.8-blue?logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/dependencies-0-brightgreen" alt="Zero dependencies">
   <img src="https://img.shields.io/badge/license-MIT-yellow" alt="MIT">
-  <img src="https://img.shields.io/badge/data-official%20%2F%20free-success" alt="Official free data">
+  <img src="https://img.shields.io/badge/data-official%20API-success" alt="Official API">
+  <img src="https://img.shields.io/badge/status-unofficial-lightgrey" alt="Unofficial">
+</p>
+
+<p align="center">
+  <!-- Demo: a GIF of Claude Code searching jobs through this MCP. See assets/README.md to record one. -->
+  <img src="assets/demo.gif" alt="Claude Code using the France Travail MCP" width="720">
 </p>
 
 ---
@@ -116,10 +122,29 @@ agent ──stdio JSON-RPC──> server.py ──OAuth2 (client_credentials)─
 
 `stdout` = JSON-RPC only · logs → `stderr` · single file · no framework.
 
+## Data source
+
+Data comes from the official **France Travail** APIs (*Offres d'emploi v2*, *ROME Métiers*),
+documented at [francetravail.io](https://francetravail.io). The data is provided by France
+Travail; this project is only a client that calls those public APIs.
+
+## Built by
+
+Created and maintained by **Mohamed Amine Ben Mallessa**.
+Used in production by **[Sollea AI](https://sollea-ai.com)**.
+
 ## Roadmap & design notes
 
 See **[BRAINSTORM.md](./BRAINSTORM.md)** — salary parser, skill extraction, more FT APIs (*La Bonne Boîte* for prospecting), smarter ROME ranking, HTTP/SSE transport.
 
+## Disclaimer
+
+> **Unofficial project.** This is an independent, open-source MCP client. It is **not developed,
+> affiliated with, sponsored, or endorsed by France Travail**. "France Travail", "Pôle Emploi"
+> and their logos are trademarks of their respective owners. This project only consumes France
+> Travail's public APIs under their terms of use. Use responsibly and respect the API rate limits
+> and conditions.
+
 ## License
 
-MIT. Independent open-source client — not affiliated with or endorsed by France Travail.
+MIT.
