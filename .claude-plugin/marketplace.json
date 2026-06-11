@@ -1,0 +1,13 @@
+{
+  "name": "francetravail-marketplace",
+  "owner": {
+    "name": "Mohamed Amine Ben Mallessa"
+  },
+  "plugins": [
+    {
+      "name": "francetravail",
+      "source": "./",
+      "description": "Official France Travail job-market API for AI agents: search jobs, market stats, ROME occupation lookup. Zero dependencies."
+    }
+  ]
+}

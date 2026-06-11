@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "francetravail": {
+      "command": "python",
+      "args": ["./server.py"],
+      "env": {
+        "FT_CLIENT_ID": "${FT_CLIENT_ID}",
+        "FT_CLIENT_SECRET": "${FT_CLIENT_SECRET}",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

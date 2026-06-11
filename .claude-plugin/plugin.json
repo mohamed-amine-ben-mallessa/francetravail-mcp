@@ -1,0 +1,21 @@
+{
+  "name": "francetravail",
+  "description": "Real-time French job-market data from the official France Travail API — search jobs with structured salary/skills/ROME, get market aggregations, and look up official occupation codes. No scraping.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mohamed Amine Ben Mallessa"
+  },
+  "license": "MIT",
+  "keywords": ["france-travail", "jobs", "emploi", "rome", "france", "recruitment", "mcp"],
+  "mcpServers": {
+    "francetravail": {
+      "command": "python",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server.py"],
+      "env": {
+        "FT_CLIENT_ID": "${FT_CLIENT_ID}",
+        "FT_CLIENT_SECRET": "${FT_CLIENT_SECRET}",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}
