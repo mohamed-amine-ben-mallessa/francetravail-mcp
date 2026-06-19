@@ -1,0 +1,25 @@
+{
+  "manifest_version": "0.2",
+  "name": "francetravail-mcp",
+  "version": "0.1.0",
+  "description": "First open-source MCP server for the official France Travail (Pôle Emploi) job-market API. 5 tools, zero dependencies, pure Python stdlib.",
+  "author": {
+    "name": "Mohamed Amine Ben Mallessa",
+    "email": "sollea@sollea-ai.com"
+  },
+  "server": {
+    "type": "python",
+    "entry_point": "francetravail_mcp/__init__.py",
+    "mcp_config": {
+      "command": "python",
+      "args": [
+        "${__dirname}/francetravail_mcp/__init__.py"
+      ],
+      "env": {
+        "FT_CLIENT_ID": "",
+        "FT_CLIENT_SECRET": ""
+      }
+    }
+  },
+  "license": "MIT"
+}

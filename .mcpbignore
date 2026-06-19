@@ -1,0 +1,19 @@
+# Exclude non-essential files from the MCPB bundle
+.git/
+.gitignore
+.env
+.env.example
+__pycache__/
+*.pyc
+dist/
+*.egg-info/
+.venv/
+venv/
+media/
+assets/
+CONFIGURATION.md
+BRAINSTORM.md
+commands/
+skills/
+.claude-plugin/
+.github/
