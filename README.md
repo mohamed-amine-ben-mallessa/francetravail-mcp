@@ -6,6 +6,7 @@
 
 <p align="center">
   <a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-stdio-blue" alt="MCP"></a>
+  <a href="https://pypi.org/project/francetravail-mcp/"><img src="https://img.shields.io/pypi/v/francetravail-mcp?label=PyPI" alt="PyPI"></a>
   <img src="https://img.shields.io/badge/python-%E2%89%A53.8-blue?logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/dependencies-0-brightgreen" alt="Zero dependencies">
   <img src="https://img.shields.io/badge/license-MIT-yellow" alt="MIT">
@@ -46,6 +47,13 @@ You Google it. You get three aggregator sites, a paywall, and offers from 2024.
 
 ## Install (1 minute)
 
+### Option A — pip (recommended)
+```bash
+pip install francetravail-mcp
+# then set FT_CLIENT_ID and FT_CLIENT_SECRET env vars
+```
+
+### Option B — git clone
 ```bash
 git clone https://github.com/mohamed-amine-ben-mallessa/francetravail-mcp.git
 cp francetravail-mcp/.env.example francetravail-mcp/.env

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "francetravail-mcp"
+version = "0.1.0"
+description = "First open-source MCP server for the official France Travail (Pôle Emploi) job-market API. 5 tools, zero dependencies, pure Python stdlib."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Mohamed Amine Ben Mallessa", email = "sollea@sollea-ai.com"}
+]
+keywords = ["mcp", "francetravail", "france-travail", "pole-emploi", "job-api", "mcp-server", "emploi", "recruitment"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/mohamed-amine-ben-mallessa/francetravail-mcp"
+Repository = "https://github.com/mohamed-amine-ben-mallessa/francetravail-mcp"
+"France Travail API" = "https://francetravail.io"
+Documentation = "https://github.com/mohamed-amine-ben-mallessa/francetravail-mcp/blob/main/README.md"
+
+[project.scripts]
+francetravail-mcp = "francetravail_mcp:main"
